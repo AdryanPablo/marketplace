@@ -1,21 +1,16 @@
 import Formulario from './componentes/Formulario.js'
+import Entrada from './componentes/Entrada.js'
+import Botao from './componentes/Botao.js'
 
 export default function Cadastro() {
     const Cadastro = Formulario('Cadastro')
-    const Legenda = Legenda('Cadastro')
 
-    const entradaNome = Entrada('text', 'Nome')
-    const entradaSobrenome = Entrada('text', 'Sobrenome')
-    const entradaEmail = Entrada('email', 'Email')
-    const entradaSenha = Entrada('password', 'Senha')
+    Cadastro.appendChild(Entrada('text', 'Nome'))
+    Cadastro.appendChild(Entrada('text', 'Sobrenome'))
+    Cadastro.appendChild(Entrada('email', 'Email'))
+    Cadastro.appendChild(Entrada('password', 'Senha'))
 
-    Cadastro.appendChild(Legenda)
-    Cadastro.appendChild(entradaNome)
-    Cadastro.appendChild(entradaSobrenome)
-    Cadastro.appendChild(entradaEmail)
-    Cadastro.appendChild(entradaSenha)
-
-    Cadastro.appendChild(formularioCadastro)
+    Cadastro.appendChild(Botao('Cadastrar'))
 
     return Cadastro
 }
