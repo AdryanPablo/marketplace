@@ -1,6 +1,6 @@
-import Formulario from './componentes/Formulario.js'
-import Entrada from './componentes/Entrada.js'
-import Botao from './componentes/Botao.js'
+import Formulario from '../componentes/Formulario.js'
+import Entrada from '../componentes/Entrada.js'
+import Botao from '../componentes/Botao.js'
 
 export default function Cadastro() {
     const Cadastro = Formulario('Cadastro')

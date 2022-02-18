@@ -11,11 +11,11 @@ $query = "INSERT INTO usuarios(nome, sobrenome, email, senha) VALUES('$nome', '$
 
 if (mysqli_query($conexao, $query)) {
 
-    echo "Usuário cadastrado com sucesso.";
+    header("Location: index.html");
 
 } else {
 
-    echo "Erro ao tentar cadastrar usuário.";
+    header("Location: index.html");
 
 }
 
