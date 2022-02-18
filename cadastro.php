@@ -7,16 +7,25 @@ $sobrenome = $_POST["sobrenome"];
 $email = $_POST["email"];
 $senha = md5($_POST["senha"]);
 
-$query = "INSERT INTO usuarios(nome, sobrenome, email, senha) VALUES('$nome', '$sobrenome', '$email', '$senha')";
-
-if (mysqli_query($conexao, $query)) {
+if (empty($nome) || empty($sobrenome) || empty($email) || empty($senha)) {
 
     header("Location: index.html");
+    exit();
 
 } else {
 
-    header("Location: index.html");
+    $query = "INSERT INTO usuarios(nome, sobrenome, email, senha) VALUES('$nome', '$sobrenome', '$email', '$senha')";
+
+    if (mysqli_query($conexao, $query)) {
+
+        header("Location: index.html");
+
+    } else {
+
+        header("Location: index.html");
+
+    }
+
+    mysqli_close($conexao);
 
 }
-
-mysqli_close($conexao);
