@@ -1,11 +1,13 @@
-import Cadastro from './paginas/Cadastro.js'
+import Cabecalho from './componentes/Cabecalho.js'
+import Conteudo from './componentes/Conteudo.js'
+import Rodape from './componentes/Rodape.js'
 
 const root = document.querySelector('body')
 
-window.addEventListener('load', init)
+window.addEventListener('load', () => {
 
-function init() {
+    root.appendChild(Cabecalho())
+    root.appendChild(Conteudo())
+    root.appendChild(Rodape())
 
-    root.appendChild(Cadastro())
-
-}
+})

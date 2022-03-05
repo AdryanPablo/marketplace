@@ -3,7 +3,7 @@
 $servidor = "localhost";
 $usuario = "root";
 $senha = "";
-$bancoDeDados = "cadastro";
+$bancoDeDados = "marketplace";
 
 $conexao = mysqli_connect($servidor, $usuario, $senha, $bancoDeDados);
 

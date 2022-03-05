@@ -6,7 +6,7 @@ export default function cadastrar() {
     let email = document.querySelector('#email')
     let senha = document.querySelector('#senha')
 
-    let formulario = document.querySelector('#cadastro')
+    let formulario = document.querySelector('#cadastrar')
 
     if (temConteudo(nome) && temConteudo(sobrenome) && temConteudo(email) && temConteudo(senha)) {
 
