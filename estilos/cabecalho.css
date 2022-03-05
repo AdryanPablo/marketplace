@@ -47,6 +47,7 @@ a {
 
 a:hover {
     background-color: var(--azulClaro);
+    cursor: pointer;
     font-weight: bold;
     color: var(--azulEscuro);
 }

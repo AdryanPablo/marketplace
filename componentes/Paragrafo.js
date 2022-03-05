@@ -1,6 +1,6 @@
-export default function Paragrafo() {
+export default function Paragrafo(conteudo) {
     const Paragrafo = document.createElement('p')
-    Paragrafo.textContent = 'Desenvolvido por Ádryan Pablo'
+    Paragrafo.textContent = conteudo
 
     return Paragrafo
 }

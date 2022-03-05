@@ -1,3 +1,4 @@
+import entrar from '../modulos/entrar.js'
 import cadastrar from '../modulos/cadastrar.js'
 
 export default function Botao(conteudo) {
@@ -9,8 +10,18 @@ export default function Botao(conteudo) {
     Botao.addEventListener('click', (event) => {
 
         event.preventDefault()
-        cadastrar()
-    
+
+        let botao = event.target.innerHTML
+
+        if (botao == 'Entrar') {
+
+            entrar()
+
+        } else if (botao == 'Cadastrar') {
+
+            cadastrar()
+
+        }
     })
     
     return Botao
