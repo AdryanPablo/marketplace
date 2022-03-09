@@ -1,6 +1,7 @@
 import Home from '../paginas/Home.js'
 import Entrar from '../paginas/Entrar.js'
 import Cadastrar from '../paginas/Cadastrar.js'
+import Editar from '../paginas/Editar.js'
 import Contato from '../paginas/Contato.js'
 import Sair from '../paginas/Sair.js'
 
@@ -14,6 +15,10 @@ export default function paginaAtual(pagina) {
     } else if (pagina == 'Cadastrar') {
 
         paginaAtual = Cadastrar()
+
+    } else if (pagina == 'Editar') {
+
+        paginaAtual = Editar()
 
     } else if (pagina == 'Contato') {
 

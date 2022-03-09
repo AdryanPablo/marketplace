@@ -1,5 +1,6 @@
 import entrar from '../modulos/entrar.js'
 import cadastrar from '../modulos/cadastrar.js'
+import editar from '../modulos/editar.js'
 
 export default function Botao(conteudo) {
     const Botao = document.createElement('button')
@@ -20,6 +21,10 @@ export default function Botao(conteudo) {
         } else if (botao == 'Cadastrar') {
 
             cadastrar()
+
+        } else if (botao == 'Editar') {
+
+            editar()
 
         }
     })

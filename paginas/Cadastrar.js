@@ -1,4 +1,3 @@
-import Titulo from '../componentes/Titulo.js'
 import Formulario from '../componentes/Formulario.js'
 import Entrada from '../componentes/Entrada.js'
 import Botao from '../componentes/Botao.js'

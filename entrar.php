@@ -2,17 +2,20 @@
 
 require_once "./conexao.php";
 
+session_start();
+
 $email = $_POST["email"];
 $senha = md5($_POST["senha"]);
 
 if (empty($email) || empty($senha)) {
 
-    header("Location: index.html");
+    header("Location: index.php");
     exit();
 
 } else {
 
-    header("Location: index.html");
+    $_SESSION['email'];
+    header("Location: index.php");
     exit;
 
 }

@@ -9,7 +9,7 @@ $senha = md5($_POST["senha"]);
 
 if (empty($nome) || empty($sobrenome) || empty($email) || empty($senha)) {
 
-    header("Location: index.html");
+    header("Location: index.php");
     exit();
 
 } else {
@@ -18,11 +18,11 @@ if (empty($nome) || empty($sobrenome) || empty($email) || empty($senha)) {
 
     if (mysqli_query($conexao, $query)) {
 
-        header("Location: index.html");
+        header("Location: index.php");
 
     } else {
 
-        header("Location: index.html");
+        header("Location: index.php");
 
     }
 

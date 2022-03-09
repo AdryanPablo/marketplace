@@ -6,6 +6,7 @@ export default function Lista() {
     Lista.appendChild(Item('Home'))
     Lista.appendChild(Item('Entrar'))
     Lista.appendChild(Item('Cadastrar'))
+    Lista.appendChild(Item('Editar'))
     Lista.appendChild(Item('Contato'))
     Lista.appendChild(Item('Sair'))
 
